@@ -1,0 +1,76 @@
+.form {
+    display: block;
+    
+    .submit-field {
+    position: relative;
+    margin-left: 93px;
+    
+    .submit {
+    display: flex;
+    margin-top: 20px;
+}
+}
+}
+
+.submit-field>label {
+
+    min-width: 207px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--button-text-color);
+}
+
+.submit>input {
+    display: flex;
+    align-items: center;
+    min-width: 358px;
+    height: 50px;
+    padding: 0;
+    padding-left: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+
+    color: var(--tertiary-text-color);
+    background-color: var(--bcg-hero-color);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+}
+
+.submit-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 200px;
+    height: 50px;
+    margin-left: 12px;
+    padding: 0;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    color: var(--button-text-color);
+    background-color: var(--accent-color);
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: var(--accent-color);
+    border-radius: 4px;
+
+    .submit-svg {
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    margin-left: 10px;
+    fill: currentColor;
+}
+}
+

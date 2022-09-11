@@ -1,0 +1,50 @@
+.works {
+    margin: 0;
+    padding-top: 0px;
+    padding-bottom: 94px;
+}
+
+.works__list {
+    display: flex;
+    content: '';
+    max-height: 294px;
+
+   .works__item {
+    display: block;
+    content: '';
+    position: relative;
+    overflow: hidden;
+    margin-right: 30px;
+    
+    & {
+            @extend %mrlast-0;
+}
+}   
+}
+
+.thumb__text {
+    margin: 0;
+    padding-top: 27px;
+    padding-bottom: 27px;
+}
+
+.thumb>.thumb__card {
+    display: flex;
+    content: '';
+    position: absolute;
+    width: 370px;
+    height: 70px;
+    bottom: 0;
+
+    justify-content: center;
+
+    color: var(--button-text-color);
+    background-color: var(--color-thumb-text);
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
