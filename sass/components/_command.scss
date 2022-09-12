@@ -6,18 +6,31 @@
 }
 
 .command__list {
-  display: flex;
-  justify-content: space-between;
+  @media screen and (max-width: 767px) {
+    .command__item:not(:last-child) {
+      margin-bottom: 30px;
+  }
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
   
  .command__item {
+  width: 100%;
   background-color: var(--button-text-color);
-  margin-right: 30px;
-  
-    & {
-      @extend %mrlast-0;
-    }
 
-}
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px)/ 2);
+  }
+  
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 3 * 30px)/ 4);
+  }
 }
 
 .person {

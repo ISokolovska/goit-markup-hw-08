@@ -18,7 +18,7 @@
   </head>
 
   <body>
-    <!--Site nav-->
+    <!--Site nav--><!-- Tablet_Descktop_menu -->
     <header class="header">
       <div class="main-navigation">
         <nav class="site-navigation">
@@ -51,6 +51,59 @@
             </a>
           </li>
         </ul>
+      </div>
+
+      <!-- Mobile menu -->
+      <!-- <div class="main-navigation">
+        <nav class="site-navigation">
+          <a href="./index.html" class="logo">
+            <span class="logo--blue">Web</span><span class="logo--black">Studio</span>
+          </a>
+          <ul class="site-navigation__list">
+            <li class="site-navigation__item"><a href="Студія" class="link current">Студія</a></li>
+            <li class="site-navigation__item">
+              <a href="./portfolio.html" class="link">Портфоліо</a>
+            </li>
+            <li class="site-navigation__item"><a href="Контакти" class="link">Контакти</a></li>
+          </ul>
+        </nav>
+        <ul class="connection">
+          <li class="connection__item">
+            <a class="connection__link" href="#" aria-label="envelope">
+              <svg class="connection__icon" width="16" height="12">
+                <use href="./images/symbol-defs.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="connection__item">
+            <a class="connection__link" href="#" aria-label="smartphone">
+              <svg class="connection__icon" width="10" height="16">
+                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+              </svg>
+              +380961111111
+            </a>
+          </li>
+        </ul>
+        <button
+          type="button"
+          class="main-navigation__button is-open"
+          aria-label="Перемикач мобільного меню"
+          aria-expanded="false"
+          aria-controls="main-navigation__menu"
+          data-menu-button
+        >
+          <svg width="40" height="40">
+            <use class="icon__menu" href="./images/menubtn/symbol-defs.svg#icon-menu_40px-1"></use>
+            <use
+              class="icon__close"
+              href="./images/menubtn/symbol-defs.svg#icon-close_40px-1"
+            ></use>
+          </svg>
+        </button>
+        <div class="main-navigation__menu is-open" id="main-navigation__menu" data-menu>
+          Контент-меню
+        </div> -->
       </div>
     </header>
 
@@ -432,9 +485,15 @@
             <div>
               <form class="form">
                 <div class="submit-field">
-                  <label for="email">Підпишіться на розсилку</label>
+                  <label class="submit__label" for="email">Підпишіться на розсилку</label>
                   <div class="submit">
-                    <input type="email" name="email" id="email" placeholder="E-mail" />
+                    <input
+                      class="submit__input"
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="E-mail"
+                    />
                     <button class="submit-button" type="submit">
                       Підписатися
                       <svg class="submit-svg" width="24" height="24">
@@ -519,7 +578,7 @@
         </form>
       </div>
     </div>
-
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

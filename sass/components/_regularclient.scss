@@ -5,16 +5,29 @@
 }
 
 .regularclient__list {
-  display: flex;
-    
-  .regularclient__item {
-  margin-right: 30px;
+  width: 100%;
+    @media screen and (min-width: 480px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    }
+}
+
+
+.regularclient__item {
   border-radius: 1px;
 
-  & {
-  @extend %mrlast-0;
-}
-}
+  @media screen and (min-width: 480px) {
+    width: calc((100% - 30px) / 2);
+  }
+    
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 2 * 30px)/ 3);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 5 * 30px)/ 6);
+  }
 }
 
 .regularclient__link {

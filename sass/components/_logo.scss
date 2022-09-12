@@ -1,4 +1,4 @@
-.logo {
+.site-navigation .logo {
     display: block;
     padding-top: 24px;
     padding-bottom: 25px;
@@ -8,6 +8,17 @@
     font-size: 26px;
     line-height: 1.2;
     text-decoration: none;
+}
+
+.footer__container .logo {
+    padding-top: 0;
+    padding-bottom: 0;
+    // margin-bottom: 20px;
+    text-align: center;
+
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+    }
 }
 
 .logo--blue {

@@ -1,31 +1,40 @@
 .form {
     display: block;
+    content: "";
     
     .submit-field {
     position: relative;
     margin-left: 93px;
     
     .submit {
-    display: flex;
-    margin-top: 20px;
+        position: absolute;
+        display: block;
+        justify-content: center;
+        align-items: center;
+
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            margin-top: 20px;
+    }
+    
 }
 }
 }
 
-.submit-field>label {
-
+.submit__label {
     min-width: 207px;
-
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-
     color: var(--button-text-color);
+    text-align: center;
+
+    
 }
 
-.submit>input {
+.submit__input {
     display: flex;
     align-items: center;
     min-width: 358px;
@@ -73,4 +82,6 @@
     fill: currentColor;
 }
 }
+
+
 
