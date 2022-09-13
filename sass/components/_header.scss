@@ -133,18 +133,18 @@
 }
 
 @media screen and (max-width: 767px) {
-    .main-navigation__menu {
+    .main-navigation {
         top: 100%;
-        left: 0;
         width: 100%;
         height: 796px;
         position: absolute;
         background-color: var(--button-text-color);
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
-    &.is-open {
-        display: block;
-    }
+        border: 1px solid rgba(236, 236, 236, 1);
+        left: 0;
+            &.is-open {
+                display: block;
+            }
     }
 }
-
+ 
 
