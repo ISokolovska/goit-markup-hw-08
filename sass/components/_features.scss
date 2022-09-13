@@ -43,7 +43,10 @@
     font-size: 14px;
     line-height: 1.2;
     text-transform: uppercase;
-    text-align: left;
+    text-align: center; 
+    @media screen and (min-width: 768px) {
+        text-align: left;
+        }
 }
 
 .features__text {
