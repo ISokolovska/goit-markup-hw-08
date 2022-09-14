@@ -10,6 +10,21 @@
     text-decoration: none;
 }
 
+.menu .logo {
+    display: none;
+    @media screen and (max-width: 767px) {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 25px;
+
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    text-decoration: none;
+    }
+}
+
 .footer__container .logo {
     display: block;
     padding-top: 0;

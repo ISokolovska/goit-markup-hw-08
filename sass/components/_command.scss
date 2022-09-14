@@ -17,21 +17,25 @@
 }
 
 .command__list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  box-sizing: inherit;
-  
-    @media screen and (min-width: 1200px) {
-      flex-wrap: nowrap;
-      }
-      
+  width: 100%;
+
     @media screen and (max-width: 767px) {
       .command__item:not(:last-child) {
         margin-bottom: 30px;
   }
   }
-}
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+      flex-wrap: nowrap;
+      justify-content: space-between;
+    } 
+  }
   
  .command__item {
   width: 100%;
@@ -45,12 +49,6 @@
   @media screen and (min-width: 1200px) {
     width: calc((100% - 3 * 30px)/ 4);
   }
-}
-
-.img {
-  display: block;
-  max-width: 100%;
-  height: auto;
 }
 
 .person {
