@@ -31,8 +31,7 @@
     display: flex;
 
     @media screen and (min-width: 768px) {
-        margin-right: auto;
-        margin-left: auto;
+        margin-left: 88px;
     }
 
     @media screen and (min-width: 1200px) {
@@ -91,9 +90,10 @@
             display: flex;
             margin-left: auto;
         }
-
-    .connection__item+.connection__item {
-    margin-left: 30px;
+            @media screen and (min-width: 1200px) {
+            .connection__item:not(:last-child) {
+            margin-left: 30px;
+            }   
 }
 }
 

@@ -135,8 +135,7 @@ h2 {
 }
 @media screen and (min-width: 768px) {
   .site-navigation__list {
-    margin-right: auto;
-    margin-left: auto;
+    margin-left: 88px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -194,8 +193,10 @@ h2 {
     margin-left: auto;
   }
 }
-.connection .connection__item + .connection__item {
-  margin-left: 30px;
+@media screen and (min-width: 1200px) {
+  .connection .connection__item:not(:last-child) {
+    margin-left: 30px;
+  }
 }
 
 .connection__link {
@@ -287,6 +288,7 @@ body.scroll-lock {
   margin: 0;
   background-color: rgba(0, 0, 0, 0);
   border: var(--primary-text-color);
+  z-index: 999;
 }
 @media screen and (min-width: 768px) {
   .menu-btn {
@@ -1305,6 +1307,13 @@ body.scroll-lock {
   fill: currentColor;
 }
 
+.modal__form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -1329,9 +1338,14 @@ body.scroll-lock {
   border-radius: 4px;
   transition: transform 250ms var(--timing-function);
 }
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .modal {
     width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 528px;
   }
 }
 

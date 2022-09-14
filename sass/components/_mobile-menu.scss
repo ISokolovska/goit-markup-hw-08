@@ -12,6 +12,7 @@ body.scroll-lock {
     margin: 0;
     background-color: rgba(0, 0, 0, 0);
     border: var(--primary-text-color);
+    z-index: 999;
 
     @media screen and (min-width: 768px) {
         display: none;

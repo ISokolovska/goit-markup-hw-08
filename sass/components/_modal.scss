@@ -1,3 +1,10 @@
+.modal__form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -25,12 +32,15 @@
     border-radius: 4px;
 
     transition: transform 250ms var(--timing-function);
-        @media screen and (min-width: 480px) and (max-width: 767px)  {
-        width: 450px;
+
+    @media screen and (min-width: 480px) {
+      width: 450px;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 528px;
+    }
   }
-
-
-}
 
 .backdrop.is-hidden {
     visibility: hidden;
