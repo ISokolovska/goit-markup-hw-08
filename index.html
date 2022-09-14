@@ -19,53 +19,29 @@
 
   <body>
     <header class="header">
-      <!-- Mobile menu -->
-      <!-- <div class="menu-container js-menu-container" id="mobile-menu">
-        <button type="button" class="menu-toggle js-close-menu">
-          <svg width="40" height="40">
-            <use class="icon__menu" href="./images/menubtn/symbol-defs.svg#icon-menu_40px-1"></use>
+      <div class="main-navigation">
+        <button
+          class="menu-btn is-open js-close-menu"
+          type="button"
+          aria-label="Перемикач меню"
+          aria-expanded="true"
+          js-open-menu js-close-menu
+        >
+          <svg width="40" heiht="40" class="header_svg--close">
+            <use class="menu__open" href="./images/menubtn/symbol-defs.svg#icon-menu_40px-1"></use>
             <use
-              class="icon__close"
+              class="menu__close"
               href="./images/menubtn/symbol-defs.svg#icon-close_40px-1"
             ></use>
-          </svg>
-        </button>
-        <ul class="mobile-menu">
-          <li class="link"><a href="Студія" class="link current">Студія</a></li>
-          <li class="link">
-            <a href="./portfolio.html" class="link">Портфоліо</a>
-          </li>
-          <li class="link"><a href="Контакти" class="link">Контакти</a></li>
-        </ul>
-        </nav>
-        <ul class="connection">
-          <li class="connection__item">
-            <a class="connection__link" href="#"> info@devstudio.com </a>
-          </li>
-          <li class="connection__item">
-            <a class="connection__link" href="#"> +380961111111 </a>
-          </li>
-        </ul>
-        <ul>
-          <li><a href="" class="link">Instagram</a></li>
-          <li><a href="" class="link">Twitter</a></li>
-          <li><a href="" class="link">Facebook</a></li>
-          <li><a href="" class="link">LinkedIn</a></li>
-        </ul>
-      </div> -->
-
-      <!--Site nav--><!-- Tablet_Descktop_menu -->
-      <div class="main-navigation">
-        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-          <svg class="connection__icon" width="40" height="40">
-            <use href="./images/menubtn/symbol-defs.svg#icon-menu_40px-1"></use>
           </svg>
         </button>
         <nav class="site-navigation">
           <a href="./index.html" class="logo">
             <span class="logo--blue">Web</span><span class="logo--black">Studio</span>
           </a>
-          <ul class="site-navigation__list">
+          <div class="menu-box is-open js-menu-container">
+
+            <ul class="site-navigation__list">
             <li class="site-navigation__item"><a href="Студія" class="link current">Студія</a></li>
             <li class="site-navigation__item">
               <a href="./portfolio.html" class="link">Портфоліо</a>
@@ -91,8 +67,10 @@
             </a>
           </li>
         </ul>
+          </div>
+
+          
       </div>
-      <div></div>
     </header>
 
     <main>
@@ -191,13 +169,20 @@
         <h2 class="command__title">Наша команда</h2>
         <div class="container">
           <ul class="command__list">
-            <li class="command__item first">
-              <img
-                src="./images/productdesigner.jpg"
-                alt="Product Designer"
-                width="270"
-                height="260"
-              />
+            <li class="command__item">
+              <picture>
+                <source
+                  srcet="./images/img1xmob1.jpg 1x, ./images/img2xmob1.jpg 2x"
+                  media="max-width 767px" />
+                <source
+                  srcet="./images/img1xtab1.jpg 1x, ./images/img2xtab1.jpg 2x"
+                  media="max-width 1199px" />
+                <source
+                  srcet="./images/img1xdesk1.jpg 1x, ./images/img2xdesk1.jpg 2x"
+                  media="min-width 1200px" />
+                <img src="./images/img1xmob1.jpg" alt="Product Designer"
+              /></picture>
+
               <div class="person">
                 <h3 class="person__title">Ігор Дем'яненко</h3>
                 <p class="person__post">Product Designer</p>
@@ -233,13 +218,23 @@
                 </ul>
               </div>
             </li>
-            <li class="command__item second">
-              <img
-                src="./images/frontenddeveloper.jpg"
-                alt="Frontend Developer"
-                width="270"
-                height="260"
-              />
+            <li class="command__item">
+              <picture>
+                <source
+                  srcet="./images/img1xmob2.jpg 1x, ./images/img2xmob2.jpg 2x"
+                  media="max-width 767px"
+                />
+                <source
+                  srcet="./images/img1xtab2.jpg 1x, ./images/img2xtab2.jpg 2x"
+                  media="max-width 1199px"
+                />
+                <source
+                  srcet="./images/img1xdesk2.jpg 1x, ./images/img2xdesk2.jpg 2x"
+                  media="min-width 1200px"
+                />
+                <img src="./images/img1xmob2.jpg" alt="Frontend Developer" />
+              </picture>
+
               <div class="person">
                 <h3 class="person__title">Ольга Рєпіна</h3>
                 <p class="person__post">Frontend Developer</p>
@@ -275,8 +270,23 @@
                 </ul>
               </div>
             </li>
-            <li class="command__item third">
-              <img src="./images/marketing.jpg" alt="Marketing" width="270" height="260" />
+            <li class="command__item">
+              <picture>
+                <source
+                  srcet="./images/img1xmob3.jpg 1x, ./images/img2xmob3.jpg 2x"
+                  media="max-width 767px"
+                />
+                <source
+                  srcet="./images/img1xtab3.jpg 1x, ./images/img2xtab3.jpg 2x"
+                  media="max-width 1199px"
+                />
+                <source
+                  srcet="./images/img1xdesk3.jpg 1x, ./images/img2xdesk3.jpg 2x"
+                  media="min-width 1200px"
+                />
+                <img src="./images/img1xmob3.jpg" alt="Marketing" />
+              </picture>
+
               <div class="person">
                 <h3 class="person__title">Микола Тарасов</h3>
                 <p class="person__post">Marketing</p>
@@ -312,8 +322,23 @@
                 </ul>
               </div>
             </li>
-            <li class="command__item fouth">
-              <img src="./images/uidesigner.jpg" alt="UI Designer" width="270" height="260" />
+            <li class="command__item">
+              <picture>
+                <source
+                  srcet="./images/img1xmob4.jpg 1x, ./images/img2xmob4.jpg 2x"
+                  media="max-width 767px"
+                />
+                <source
+                  srcet="./images/img1xtab4.jpg 1x, ./images/img2xtab4.jpg 2x"
+                  media="max-width 1199px"
+                />
+                <source
+                  srcet="./images/img1xdesk4.jpg 1x, ./images/img2xdesk4.jpg 2x"
+                  media="min-width 1200px"
+                />
+                <img src="./images/img1xmob4.jpg" alt="UI Designer" />
+              </picture>
+
               <div class="person">
                 <h3 class="person__title">Михайло Єрмаков</h3>
                 <p class="person__post">UI Designer</p>
@@ -563,6 +588,7 @@
         </form>
       </div>
     </div>
+    <!-- <script src="./js/body-scroll-lock.js"></script> -->
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>

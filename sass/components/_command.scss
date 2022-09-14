@@ -5,17 +5,31 @@
   background-color: var(--bcg-button-color);
 }
 
-.command__list {
-  @media screen and (max-width: 767px) {
-    .command__item:not(:last-child) {
-      margin-bottom: 30px;
-  }
-  }
+.command__title {
+  font-weight: 700;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+      margin-bottom: 50px;
+      font-size: 36px;
+      }
+}
 
-  @media screen and (min-width: 768px) {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
+.command__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  box-sizing: inherit;
+  
+    @media screen and (min-width: 1200px) {
+      flex-wrap: nowrap;
+      }
+      
+    @media screen and (max-width: 767px) {
+      .command__item:not(:last-child) {
+        margin-bottom: 30px;
+  }
   }
 }
   
@@ -33,11 +47,18 @@
   }
 }
 
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .person {
   padding-top: 30px;
   padding-bottom: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  box-sizing: inherit;
 
   .person__title {
       margin-bottom: 10px;
@@ -92,89 +113,3 @@
   fill: currentColor;
   }
 }
-@media screen and (min-width: 768.98px) {
-
-  @media screen and (min-device-pixel-ratio: 2),
-  screen and (--webkit-min-device-pixel-ratio: 2),
-  screen and (-o-min-device-pixel-ratio: 2/1),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
-    .works__item.first {
-      height: 294px;
-      background-image: url("../images/imgdesk2x1.jpg");
-    }
-  }
-}
-
-@media screen and (min-width: 768.98px) {
-
-  @media screen and (min-device-pixel-ratio: 2),
-  screen and (--webkit-min-device-pixel-ratio: 2),
-  screen and (-o-min-device-pixel-ratio: 2/1),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
-    .works__item.second {
-      height: 294px;
-      background-image: url("../images/imgdesk2x2.jpg");
-    }
-  }
-}
-
-@media screen and (min-width: 768.98px) {
-
-  @media screen and (min-device-pixel-ratio: 2),
-  screen and (--webkit-min-device-pixel-ratio: 2),
-  screen and (-o-min-device-pixel-ratio: 2/1),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
-    .works__item.third {
-      height: 294px;
-      background-image: url("../images/imgdesk2x3.jpg");
-    }
-  }
-}
-
-
-// @media screen and (min-width: 768.98px) {
-
-//   @media screen and (min-device-pixel-ratio: 2),
-//   screen and (--webkit-min-device-pixel-ratio: 2),
-//   screen and (-o-min-device-pixel-ratio: 2/1),
-//   screen and (min-resolution: 192dpi),
-//   screen and (min-resolution: 2dppx) {
-//     .works__item.first {
-//       height: 294px;
-//       background-image: url("../images/imgdesk2x1.jpg");
-//     }
-//   }
-// }
-
-// @media screen and (min-width: 768.98px) {
-
-//   @media screen and (min-device-pixel-ratio: 2),
-//   screen and (--webkit-min-device-pixel-ratio: 2),
-//   screen and (-o-min-device-pixel-ratio: 2/1),
-//   screen and (min-resolution: 192dpi),
-//   screen and (min-resolution: 2dppx) {
-//     .works__item.second {
-//       height: 294px;
-//       background-image: url("../images/imgdesk2x2.jpg");
-//     }
-//   }
-// }
-
-// @media screen and (min-width: 768.98px) {
-
-//   @media screen and (min-device-pixel-ratio: 2),
-//   screen and (--webkit-min-device-pixel-ratio: 2),
-//   screen and (-o-min-device-pixel-ratio: 2/1),
-//   screen and (min-resolution: 192dpi),
-//   screen and (min-resolution: 2dppx) {
-//     .works__item.third {
-//       height: 294px;
-//       background-image: url("../images/imgdesk2x3.jpg");
-//     }
-//   }
-// }
-
-
