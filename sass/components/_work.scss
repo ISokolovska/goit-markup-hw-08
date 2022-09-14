@@ -1,7 +1,14 @@
 .works {
-    margin: 0;
-    padding-top: 0px;
-    padding-bottom: 94px;
+    @media screen and (max-width: 1199px) {
+            margin: 0;
+            padding: 0;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin: 0;
+        padding-top: 0px;
+        padding-bottom: 94px;
+    }
 
     @media screen and (max-width: 1199px) {
         padding-bottom: 0;

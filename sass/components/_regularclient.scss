@@ -1,7 +1,16 @@
 .regularclient {
-  margin: 0;
-  padding-top: 94px;
-  padding-bottom: 94px;
+
+  @media screen and (max-width: 1199px) {
+        margin: 0;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin: 0;
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 
 .regularclient__list {
@@ -18,7 +27,7 @@
   border-radius: 1px;
 
   @media screen and (min-width: 480px) {
-    width: calc((100% - 30px) / 2);
+    max-width: 226px;
   }
     
   @media screen and (min-width: 768px) {

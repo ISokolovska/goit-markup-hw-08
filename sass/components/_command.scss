@@ -1,8 +1,16 @@
 .command {
-  margin: 0;
-  padding-bottom: 94px;
-  padding-top: 94px;
   background-color: var(--bcg-button-color);
+  @media screen and (max-width: 1199px) {
+        margin: 0;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+        @media screen and (min-width: 1200px) {
+          margin: 0;
+          padding-top: 94px;
+          padding-bottom: 94px;
+        }
 }
 
 .command__title {
