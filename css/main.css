@@ -112,11 +112,9 @@ h2 {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .header {
-    position: relative;
-    border-bottom: 1px solid rgb(236, 236, 236);
-  }
+.header {
+  position: relative;
+  border-bottom: 1px solid rgb(236, 236, 236);
 }
 
 @media screen and (max-width: 767px) {
@@ -473,6 +471,7 @@ body.scroll-lock {
 }
 
 .menu-social__item:not(:last-child) {
+  position: relative;
   margin-right: 20px;
 }
 
@@ -504,7 +503,7 @@ body.scroll-lock {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #FFFFFF;
-  max-width: 480px;
+  max-width: 1600px;
   height: 400px;
   margin-right: auto;
   margin-left: auto;
@@ -521,8 +520,7 @@ body.scroll-lock {
 @media screen and (min-width: 768.98px) {
   .hero__overlay {
     height: 400px;
-    max-width: 768px;
-    background-image: linear-gradient(var(--gradient-hero), var(--gradient-hero)), url("../images/hero_tab1x.jpg");
+    background-image: linear-gradient(var(--gradient-hero), var(--gradient-hero)), url("/images/hero_tab1x.jpg");
   }
 }
 @media screen and (min-width: 1200px) {
@@ -530,7 +528,6 @@ body.scroll-lock {
     padding-top: 200px;
     padding-bottom: 200px;
     height: 600px;
-    max-width: 1600px;
     background-image: linear-gradient(var(--gradient-hero), var(--gradient-hero)), url("../images/hero1xdesktop.jpg");
   }
 }
@@ -1290,19 +1287,19 @@ body.scroll-lock {
   top: 0;
   left: 0;
   width: 100%;
-  height: 294px;
+  height: 100%;
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
   transition: transform 250ms var(--timing-function);
 }
 
 .overlay__text {
+  margin: 0;
   color: var(--button-text-color);
   font-weight: 400;
   font-size: 18px;
   line-height: 1.55;
   letter-spacing: 0.03em;
-  margin: 63px 24px;
 }
 
 .site-navigation .logo {
