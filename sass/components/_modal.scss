@@ -151,8 +151,9 @@
     position: relative;
     margin: 0;
     padding: 0;
+}
 
-    .case__input {
+.case__input {
     margin: 0;
     padding: 0;
     padding-left: 42px;
@@ -162,13 +163,12 @@
     border-radius: 4px;
     transition: border 250ms var(--timing-function),
         cursor 250ms var(--timing-function);
-    
+
     &:hover,
     &:focus {
-    border: 1px solid var(--accent-color);
-    cursor: pointer;
-}
-}
+        border: 1px solid var(--accent-color);
+        cursor: pointer;
+    }
 }
 
 .form__field #feedback.form__textarea::placeholder {
