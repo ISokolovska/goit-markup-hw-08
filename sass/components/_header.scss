@@ -21,6 +21,8 @@
         }
         @media screen and (min-width: 1200px) {
             width: 1200px;
+            align-items: center;
+            justify-content: center;
         }
 }
 
@@ -102,6 +104,13 @@
 }
 }
 
+@media screen and (min-width: 1200px) {
+    .connection__item {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+}
+
 .connection__link {
     display: inline-flex;
     align-items: center;
@@ -126,9 +135,9 @@
     }
     
     @media screen and (min-width: 1200px) {
-            padding-top: 32px;
-            padding-bottom: 32px;
-            margin-left: 30px;
+        // margin-bottom: 32px;
+        // margin-top: 32px;
+        margin-left: 30px;
     }
 
     &:hover,

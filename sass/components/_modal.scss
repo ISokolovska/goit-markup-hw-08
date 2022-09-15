@@ -142,8 +142,8 @@
     transition: fill 250ms var(--timing-function);
 }
 
-.case__input:hover~.form-icon,
-.case__input:focus~.form-icon {
+.case__input:hover~.case__icon,
+.case__input:focus~.case__icon {
     fill: var(--accent-color);
 }
 

@@ -138,6 +138,8 @@ h2 {
 @media screen and (min-width: 1200px) {
   .main-navigation {
     width: 1200px;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -221,6 +223,12 @@ h2 {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .connection__item {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
 .connection__link {
   display: inline-flex;
   align-items: center;
@@ -246,8 +254,6 @@ h2 {
 }
 @media screen and (min-width: 1200px) {
   .connection__link {
-    padding-top: 32px;
-    padding-bottom: 32px;
     margin-left: 30px;
   }
 }
@@ -470,8 +476,9 @@ body.scroll-lock {
   margin-right: 20px;
 }
 
-.menu-social__item .menu-social__link::after {
+.menu-social__item:not(:last-child) .menu-social__link::after {
   content: "";
+  position: absolute;
   display: block;
   width: 22px;
   height: 1px;
@@ -479,8 +486,6 @@ body.scroll-lock {
   top: 50%;
   transform: rotate(90deg);
   background-color: rgba(33, 33, 33, 0.2);
-  border-radius: 2px;
-  position: absolute;
 }
 
 .hero {
@@ -1586,8 +1591,8 @@ body.scroll-lock {
   transition: fill 250ms var(--timing-function);
 }
 
-.case__input:hover ~ .form-icon,
-.case__input:focus ~ .form-icon {
+.case__input:hover ~ .case__icon,
+.case__input:focus ~ .case__icon {
   fill: var(--accent-color);
 }
 
