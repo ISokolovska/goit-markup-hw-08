@@ -47,6 +47,9 @@
 .contacts__link {
     color: var(--tertiary-text-color);
     font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;   
+    letter-spacing: 0.03em;
     text-decoration: none;
     transition: color 250ms var(--timing-function);
 

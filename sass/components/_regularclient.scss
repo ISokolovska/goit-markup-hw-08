@@ -13,6 +13,19 @@
     }
 }
 
+.regularclient__title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+      margin-bottom: 50px;
+      font-size: 36px;
+      }
+}
+
 .regularclient__list {
   width: 100%;
     @media screen and (min-width: 480px) {
@@ -35,6 +48,12 @@
 
   @media screen and (min-width: 1200px) {
     width: 170px;
+  }
+}
+
+.regularclient__item:not(:last-child) { 
+  @media screen and (max-width: 479px) {
+    margin-bottom: 30px;
   }
 }
 
